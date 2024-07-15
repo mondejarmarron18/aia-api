@@ -1,7 +1,7 @@
 import { config as envConfig } from "dotenv";
 
 envConfig({
-  path: ".env.dev",
+  path: ".env.sample",
 });
 
 const _ = (key: string) => process.env[key] || "";
