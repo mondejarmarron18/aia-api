@@ -1,0 +1,40 @@
+# Node modules and dependencies
+node_modules
+npm-debug.log
+yarn-error.log
+package-lock.json
+
+# Environment variables
+.env
+.env.*
+
+# Development files
+Dockerfile.dev
+docker-compose.dev.yml
+docker-compose.override.yml
+.dockerignore
+
+# Version control files
+.git
+.gitignore
+
+# IDE and editor files
+.vscode
+.idea
+*.sublime-project
+*.sublime-workspace
+
+# Tests and build artifacts
+coverage
+*.log
+*.gz
+*.zip
+*.tar
+
+# OS and temporary files
+.DS_Store
+Thumbs.db
+*.swp
+
+# Build artifacts
+dist
