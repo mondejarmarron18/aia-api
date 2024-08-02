@@ -12,8 +12,11 @@ const config = {
     allowedOrigin: _("ALLOWED_ORIGIN"),
     nodeEnv: _("NODE_ENV"),
   },
-  apiKeys: {
-    openAI: _("OPENAI_API_KEY"),
+  api: {
+    rateLimit: _("API_REQUEST_LIMIT"),
+    keys: {
+      openAI: _("OPENAI_API_KEY"),
+    },
   },
 };
 

@@ -1,7 +1,7 @@
 import config from "../config";
 import OpenAI from "openai";
 
-const openAIKey = config.apiKeys.openAI;
+const openAIKey = config.api.keys.openAI;
 
 const openAI = new OpenAI({
   apiKey: openAIKey,

@@ -3,13 +3,14 @@ import cors from "cors";
 import config from "../utils/config";
 import helmet from "helmet";
 import morgan from "morgan";
-import rateLimit from "express-rate-limit";
+import apiRequestLimit from "./apiRequestLimit";
 
 const middlewares = express();
 
 const origin = config.app.allowedOrigin;
 const nodeEnv = config.app.nodeEnv;
 
+middlewares.use(apiRequestLimit);
 middlewares.use(
   cors({
     origin,
